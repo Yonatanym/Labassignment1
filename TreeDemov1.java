@@ -91,6 +91,12 @@ class Node{
 	  
 	   public void postOrderTraversal(Node root){
          //implement in here
+
+		if (root != null) {
+            postOrderTraversal(root.left);
+            postOrderTraversal(root.right);
+            System.out.print(root.value + " ");
+        }
 		   
 	   }
 	   
