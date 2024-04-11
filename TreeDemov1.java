@@ -75,6 +75,12 @@ class Node{
 	   */
 	   public void inOrderTraversal(Node root){
 	      //implement in here
+
+		if (root != null) {
+            inOrderTraversal(root.left);
+            System.out.print(root.value + " ");
+            inOrderTraversal(root.right);
+        }
 	   }
 	   
 	   
