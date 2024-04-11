@@ -108,6 +108,10 @@ class Node{
 	   */
 	   public boolean find(Node root, int key){
 		 //implement in here
+
+		if (root == null) return false;
+        if (root.value == key) return true;
+        return find(root.left, key) || find(root.right, key);
 		  
 	   }
 	   
